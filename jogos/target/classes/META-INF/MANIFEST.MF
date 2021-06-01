@@ -1,10 +1,6 @@
 Manifest-Version: 1.0
-Built-By: Douglas
-Build-Jdk: 15.0.2
+Build-Jdk-Spec: 15
 Implementation-Title: jogos
 Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor-Id: com.br
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
- -starter-parent/jogos
 Created-By: Maven Integration for Eclipse
 
