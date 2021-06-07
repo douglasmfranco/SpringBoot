@@ -7,11 +7,11 @@ create table user (
     primary key (id)
 );
 
-insert into user(nome,email,login,senha) values ('Douglas Franco','douglasmfranco@ibm.com','douglas','$2a$10$HKveMsPlst41Ie2LQgpijO691lUtZ8cLfcliAO1DD9TtZxEpaEoJe');
-insert into user(nome,email,login,senha) values ('Admin','admin@ibm.com','admin','$2a$10$HKveMsPlst41Ie2LQgpijO691lUtZ8cLfcliAO1DD9TtZxEpaEoJe');
+insert into user(nome,email,login,senha) values ('Douglas Franco','douglasmfranco@ibm.com','douglas','$2a$10$vHvjflun5w4hg0q8BTQfkuiFp1x5KDoPCTzWw3agXVKdtkFD5uinm');
+insert into user(nome,email,login,senha) values ('Admin','admin@ibm.com','admin','$2a$10$vHvjflun5w4hg0q8BTQfkuiFp1x5KDoPCTzWw3agXVKdtkFD5uinm');
 insert into user(nome,email,login,senha) values ('User','user1@ibm.com','user','$2a$10$vHvjflun5w4hg0q8BTQfkuiFp1x5KDoPCTzWw3agXVKdtkFD5uinm');
-insert into user(nome,email,login,senha) values ('Admin','user1@ibm.com','admin','$2a$10$vHvjflun5w4hg0q8BTQfkuiFp1x5KDoPCTzWw3agXVKdtkFD5uinm');
 
+spring.datasource.url=mysql://b4c9299bb78213:e7f51ffe@us-cdbr-east-04.cleardb.com/heroku_cc728a21105fb59?reconnect=true
 
 
 create table role (
@@ -28,10 +28,10 @@ create table user_roles (
 insert into role(id,nome) values (1, 'ROLE_USER');
 insert into role(id,nome) values (2, 'ROLE_ADMIN');
 
-insert into user_roles(user_id,role_id) values(1, 2);
+insert into user_roles(user_id,role_id) values(1, 1);
 insert into user_roles(user_id,role_id) values(2, 2);
 insert into user_roles(user_id,role_id) values(3, 1);
-insert into user_roles(user_id,role_id) values(4, 1);
+
 
 select * from role;
 select * from user;
